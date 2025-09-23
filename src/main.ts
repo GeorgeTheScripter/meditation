@@ -6,6 +6,7 @@ import components from './components/icons';
 
 const app = createApp(App);
 
+// Регистрация компонентов
 components.forEach((component: Component) => {
   app.component(component.name!, component);
 });
