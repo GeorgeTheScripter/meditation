@@ -1,6 +1,7 @@
 :root {
   --color-bg-primary: #253334;
   --color-bg-secondary: #253334;
+  --color-bg-card: #fff;
   --color-text-primary: #fff;
   --color-bg-primary-hover: #69b09c;
   --color-text-secondary: #000000;
@@ -12,9 +13,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
+  font-family: 'Alegreya', serif;
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
 }
