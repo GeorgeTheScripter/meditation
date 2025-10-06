@@ -8,9 +8,9 @@ export const useMeditationStore = defineStore('meditation', () => {
   const meditations = ref<Meditation[]>();
   const filings: Filing[] = [
     { id: 1, icon: 'chill', text: 'Спокойно' },
-    { id: 1, icon: 'trikvetr', text: 'Расслабленно' },
-    { id: 1, icon: 'master', text: 'Фокусировано' },
-    { id: 1, icon: 'circle', text: 'Тревожно' },
+    { id: 2, icon: 'trikvetr', text: 'Расслабленно' },
+    { id: 3, icon: 'master', text: 'Фокусировано' },
+    { id: 4, icon: 'circle', text: 'Тревожно' },
   ];
 
   const getMeditations = async () => {
