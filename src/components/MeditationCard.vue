@@ -2,8 +2,15 @@
 import type { Meditation } from '@/interfaces/meditation.interface';
 import Button from './Button.vue';
 import IconSmallPlay from './icons/regular_icons/IconSmallPlay.vue';
+import { useRouter } from 'vue-router';
 
 const { meditation } = defineProps<{ meditation: Meditation }>();
+
+const router = useRouter();
+
+const goToMeditation = () => {
+  router.push(`main/${meditation.id}`);
+};
 </script>
 
 <template>
@@ -14,7 +21,7 @@ const { meditation } = defineProps<{ meditation: Meditation }>();
     </div>
 
     <div class="card__controller">
-      <Button>
+      <Button @click="goToMeditation">
         Начать
         <IconSmallPlay name="icon" />
       </Button>

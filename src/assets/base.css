@@ -16,8 +16,18 @@
   transition: all 0.2s ease-in-out;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Alegreya', serif;
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
+}
+
+.container {
+  padding-top: 100px;
+  max-width: 1170px;
+  margin: 0 auto;
 }
