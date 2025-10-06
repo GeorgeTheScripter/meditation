@@ -4,9 +4,10 @@ import { createApp, type Component } from 'vue';
 import App from './App.vue';
 import components from './components/icons';
 import { createPinia } from 'pinia';
-const pinia = createPinia();
+import { router } from './router/router';
 
 const app = createApp(App);
+const pinia = createPinia();
 
 // Регистрация компонентов
 components.forEach((component: Component) => {
@@ -14,5 +15,6 @@ components.forEach((component: Component) => {
 });
 
 app.use(pinia);
+app.use(router);
 
 app.mount('#app');
